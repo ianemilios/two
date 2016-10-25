@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.nav-warp{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin: 100px auto;
+	background-color: beige;
+}
+.main-nav{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: red;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	cursor: pointer;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+.nav-warp .test{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: green;
+	transform: scale(0);
+	opacity: 0;
+	transition: all .5s ease;
+}
+.nav-warp.active .test{
+	transform: scale(1);
+	opacity: 1;
+}
+.test a{
+	width: 40px;
+	height: 40px;
+	background-color: salmon;
+	position:  absolute;
+	text-align: center;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	text-decoration: none;
+	color: black;
+	transform: translate(-50%,-50%);
+}
+
